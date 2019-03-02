@@ -1,0 +1,5868 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		7913A729DC364FBB9546CA84 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 121D890D36E441699028A24D /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				222A9C12ADFF40F6B383B181 /* CMake Rules */,
+			);
+			dependencies = (
+				1F40ECDE09B14037AAE3699D /* PBXTargetDependency */,
+				05DFCA50EE3948D996A19773 /* PBXTargetDependency */,
+				D444FBBF79294E67A7FE5E13 /* PBXTargetDependency */,
+				740C7198A7E14AF3844D9C8C /* PBXTargetDependency */,
+				93E027B06CFC49CFA1884300 /* PBXTargetDependency */,
+				3C02DF0C8BBB4ACFB41EACA6 /* PBXTargetDependency */,
+				2D93EFFA2AEB433E952663E4 /* PBXTargetDependency */,
+				DD8C0F17756344EF869886BA /* PBXTargetDependency */,
+				2D689DC6E41542BCBCF65BFA /* PBXTargetDependency */,
+				4C504E8C1A9C487EAC05E717 /* PBXTargetDependency */,
+				2B4288BF5B21447E951C0CC0 /* PBXTargetDependency */,
+				3A0576EED4714A9B8346155B /* PBXTargetDependency */,
+				E3B9ADA2595743028818248E /* PBXTargetDependency */,
+				39AE521354444BF8862EE732 /* PBXTargetDependency */,
+				42C3B2CAED044F2DB6C108D2 /* PBXTargetDependency */,
+				A8E2A2B739DC48CBAF8D7448 /* PBXTargetDependency */,
+				F1F4573FC04B4CBA827BD7F5 /* PBXTargetDependency */,
+				FC4EF43A7B554F58B69A5B6F /* PBXTargetDependency */,
+				42BEC0332F4E47F2991626EB /* PBXTargetDependency */,
+				F8CFFA8DD74843B1856F9010 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 553008DE3246483C9ACB1B01 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				00BCB3CF3C8A4E74901524E8 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0850FA5D342A462D8E747429 /* codec.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3ADA04BF588241738C359726 /* codec.cc */; };
+		0CC8EBA2E795440880183733 /* conn.cc in Sources */ = {isa = PBXBuildFile; fileRef = EA225DAA8A5F49BBB3BBF636 /* conn.cc */; };
+		1179F704EC194A3CA36489EC /* 10m-cli.cc in Sources */ = {isa = PBXBuildFile; fileRef = 06A9E9D6F2724F409438789F /* 10m-cli.cc */; };
+		12A7350241664200AD5CE6A9 /* logging.cc in Sources */ = {isa = PBXBuildFile; fileRef = EB4607347087478C951780C7 /* logging.cc */; };
+		1963F372E5D64101A9E885EA /* util.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5E14C02DF82F4391AE9D9CE5 /* util.cc */; };
+		22F7CBD023DA4027855F531B /* port_posix.cc in Sources */ = {isa = PBXBuildFile; fileRef = C65F539859374626A01F0F41 /* port_posix.cc */; };
+		27B62A29F4C949A5935B9F3E /* hsha.cc in Sources */ = {isa = PBXBuildFile; fileRef = 31277BECE1884FDBB1195ABE /* hsha.cc */; };
+		3606D071F7D34F86B1F15BA3 /* stat-svr.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2C98C86E748D4DC78A6D26E8 /* stat-svr.cc */; };
+		3C56E505A1FD438F99D5582C /* udp-svr.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7356C0691E3149B183D99F08 /* udp-svr.cc */; };
+		408B908A2B194387B96CCE34 /* reconnect.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4A5C6DD9F87C48A5A66C0310 /* reconnect.cc */; };
+		41C759E640FA4F77831239FB /* event_base.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2EC0B0101E144BC6891F9BE3 /* event_base.cc */; };
+		455A7DD3EAC846C9AF48C8D5 /* daemon.cc in Sources */ = {isa = PBXBuildFile; fileRef = 6D17F40D61924502BA6B15FC /* daemon.cc */; };
+		48D14B6DD39742919248E64D /* codec-svr.cc in Sources */ = {isa = PBXBuildFile; fileRef = 21C392B0A5EA430EA351827E /* codec-svr.cc */; };
+		49C7EA0A14FB477BA14D9306 /* echo.cc in Sources */ = {isa = PBXBuildFile; fileRef = D5FEFC0C9A7C49DE93C85B2B /* echo.cc */; };
+		4DDBA51A42604AA3B0B8CD06 /* net.cc in Sources */ = {isa = PBXBuildFile; fileRef = D2B5E97E706048FBB7281218 /* net.cc */; };
+		70A334174BCA41E391A2EC6F /* http-hello.cc in Sources */ = {isa = PBXBuildFile; fileRef = C966275038C444B6BC82F4D9 /* http-hello.cc */; };
+		79C3FBD619F9436FA8CAE203 /* http.cc in Sources */ = {isa = PBXBuildFile; fileRef = CD6C2E698A7B44B592E55361 /* http.cc */; };
+		7DEA1ACCECE0492F8C6B7234 /* threads.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3C05925CBCE6464689272829 /* threads.cc */; };
+		8239B50DEDA045B1A278CBDF /* idle-close.cc in Sources */ = {isa = PBXBuildFile; fileRef = EF60F4AA64DE473FB9EE413A /* idle-close.cc */; };
+		86A22535288E4872B1A4D456 /* 10m-svr.cc in Sources */ = {isa = PBXBuildFile; fileRef = 03A7F36DA7F3401CBE05F9F9 /* 10m-svr.cc */; };
+		92D42A1BEBA745779AA9DD35 /* kqueue.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9E34AFDBCF4A4DC589C7F83D /* kqueue.cc */; };
+		94C132C2D30C480DA7D070B4 /* poller.cc in Sources */ = {isa = PBXBuildFile; fileRef = 59B77F6273FF49BA94E83445 /* poller.cc */; };
+		98EDA7E9A35A4F1FB09FE45B /* udp-hsha.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3413D3EF378B4879AC658622 /* udp-hsha.cc */; };
+		A040B15F491A4F37BCDB9097 /* udp.cc in Sources */ = {isa = PBXBuildFile; fileRef = F7E28E6312A14F91BFBA5CC3 /* udp.cc */; };
+		AF7CC8FCC34140F49A479FE7 /* write-on-empty.cc in Sources */ = {isa = PBXBuildFile; fileRef = BB569B66563549F588DB94CE /* write-on-empty.cc */; };
+		B29FFC3612AA43DF90225076 /* conf.cc in Sources */ = {isa = PBXBuildFile; fileRef = E5ABF161F8994E06A390E4D4 /* conf.cc */; };
+		C131CED2FB9C4310B185DACF /* stat.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2D10E073F2DF490688968C41 /* stat.cc */; };
+		C28F01240106487F90EA6D97 /* file.cc in Sources */ = {isa = PBXBuildFile; fileRef = C7FEF2351E714B51A2DFB287 /* file.cc */; };
+		CED16D5C15EC4E148D1D04E6 /* timer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 6738B403BA454855A865E497 /* timer.cc */; };
+		DA2BA02AE16F4F9B8064DAAC /* udp-cli.cc in Sources */ = {isa = PBXBuildFile; fileRef = 23DF0512E2754E7A8A9F8F8D /* udp-cli.cc */; };
+		DB3D1129D0504A4EA8D38368 /* daemon.cc in Sources */ = {isa = PBXBuildFile; fileRef = 37F64C014D8B4239BDF35781 /* daemon.cc */; };
+		DDC9EF23FD7A4CF885B714A4 /* safe-close.cc in Sources */ = {isa = PBXBuildFile; fileRef = 85B33BB075A54BB294DA483B /* safe-close.cc */; };
+		F13917E8289C416FBCEF9C4D /* codec-cli.cc in Sources */ = {isa = PBXBuildFile; fileRef = 67818F51D9064A64A8946854 /* codec-cli.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07173229E5D44F8BBD824D5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD963DC87A674E4EBACC2803;
+			remoteInfo = "udp-cli";
+		};
+		0954EE9AB2ED4449ACF2DD29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BCFDB4F9224A469FB4FD3D;
+			remoteInfo = ZERO_CHECK;
+		};
+		0BF38C3AD5044A42B5E9FF4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B41BCAFAFEE48AC88560D49;
+			remoteInfo = handy;
+		};
+		0EC4D335E74340D396D8E582 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BCFDB4F9224A469FB4FD3D;
+			remoteInfo = ZERO_CHECK;
+		};
+		14C82D881D3740D2B6B6FD30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBC9ED7DA8394125B80B24D5;
+			remoteInfo = "codec-svr";
+		};
+		1625B36B0D764B238C7A1072 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B41BCAFAFEE48AC88560D49;
+			remoteInfo = handy;
+		};
+		1B9767AC9B7046CEB103C71C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B41BCAFAFEE48AC88560D49;
+			remoteInfo = handy;
+		};
+		1D87C3BF989C42528168C3D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB4D4528622F4EF48BC5D7CC;
+			remoteInfo = "codec-cli";
+		};
+		1F70AE5811E44130B04C2B74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B41BCAFAFEE48AC88560D49;
+			remoteInfo = handy;
+		};
+		235969A28DD4490CBC134D1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 559F57C51D4046439834BBCA;
+			remoteInfo = reconnect;
+		};
+		29622CA175EB45189D04A8D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B41BCAFAFEE48AC88560D49;
+			remoteInfo = handy;
+		};
+		307840395D0C4E749E984A5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B41BCAFAFEE48AC88560D49;
+			remoteInfo = handy;
+		};
+		3EC853E83EC844E3970FC928 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BCFDB4F9224A469FB4FD3D;
+			remoteInfo = ZERO_CHECK;
+		};
+		3F81DFD4AF804EAF94F0EA39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B41BCAFAFEE48AC88560D49;
+			remoteInfo = handy;
+		};
+		44B58B01287D4F0484EC867A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 842D4750182D49009019DC7C;
+			remoteInfo = "10m-cli";
+		};
+		465DDCC72D704B988E40337C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BCFDB4F9224A469FB4FD3D;
+			remoteInfo = ZERO_CHECK;
+		};
+		4794334518044D4A81C49C6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BCFDB4F9224A469FB4FD3D;
+			remoteInfo = ZERO_CHECK;
+		};
+		49720CF00B2C40BB99B2F1D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BCFDB4F9224A469FB4FD3D;
+			remoteInfo = ZERO_CHECK;
+		};
+		5BEC5A52097E43F4B119E0B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09AD99A6E0F0414A88BE7AB4;
+			remoteInfo = stat;
+		};
+		62A5045828524A7AA42D1FA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B41BCAFAFEE48AC88560D49;
+			remoteInfo = handy;
+		};
+		64F64C29625343279CAC1FA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEEEAAF9C25483FBD5DB0E4;
+			remoteInfo = kqueue;
+		};
+		6BB7C244AA56467B9A17B83F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BCFDB4F9224A469FB4FD3D;
+			remoteInfo = ZERO_CHECK;
+		};
+		6D958DF063E947318C0DF4E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26CD7490C19E465BA256DB3C;
+			remoteInfo = "10m-svr";
+		};
+		6EE89984E1474379A0A52953 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B41BCAFAFEE48AC88560D49;
+			remoteInfo = handy;
+		};
+		72CAC04D1770461B9DD0FFFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BCFDB4F9224A469FB4FD3D;
+			remoteInfo = ZERO_CHECK;
+		};
+		7C5DD238CCAF4B3EBD1CC1A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BCFDB4F9224A469FB4FD3D;
+			remoteInfo = ZERO_CHECK;
+		};
+		7E6CCFF53C0D4739A158A1B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B41BCAFAFEE48AC88560D49;
+			remoteInfo = handy;
+		};
+		871831F55241419BA63D0F6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BCFDB4F9224A469FB4FD3D;
+			remoteInfo = ZERO_CHECK;
+		};
+		9880EF88C2D1431293F2D4BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B41BCAFAFEE48AC88560D49;
+			remoteInfo = handy;
+		};
+		9CA1B2C142E94E62A68FB0F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B41BCAFAFEE48AC88560D49;
+			remoteInfo = handy;
+		};
+		9CF754E948DB4B4D9C3AD4D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BCFDB4F9224A469FB4FD3D;
+			remoteInfo = ZERO_CHECK;
+		};
+		A1B3FB7E051A46E9B3EF66DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B41BCAFAFEE48AC88560D49;
+			remoteInfo = handy;
+		};
+		A62FA1953D444B04B8633198 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BCFDB4F9224A469FB4FD3D;
+			remoteInfo = ZERO_CHECK;
+		};
+		AB5F4A1602D84B7ABD8FAA23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B41BCAFAFEE48AC88560D49;
+			remoteInfo = handy;
+		};
+		ABA4614211C64CBD9FB457AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33CDE597C522481EB38306D7;
+			remoteInfo = "write-on-empty";
+		};
+		AE1D65BEEE2A4FAEAE6BAD4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BCFDB4F9224A469FB4FD3D;
+			remoteInfo = ZERO_CHECK;
+		};
+		B0FBA31D92964FFAA17B98D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB7CB560A4F04C6ABB051A07;
+			remoteInfo = timer;
+		};
+		B7E6754DD1E540898FD5AFCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BCFDB4F9224A469FB4FD3D;
+			remoteInfo = ZERO_CHECK;
+		};
+		B8C8EC344D6B4DB2A8A69740 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BCFDB4F9224A469FB4FD3D;
+			remoteInfo = ZERO_CHECK;
+		};
+		B96F7C22050D479686957167 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B41BCAFAFEE48AC88560D49;
+			remoteInfo = handy;
+		};
+		BA54D8AB83154794BAC8D999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BCFDB4F9224A469FB4FD3D;
+			remoteInfo = ZERO_CHECK;
+		};
+		C0218AAABDAD4DEBBDCC2309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BCFDB4F9224A469FB4FD3D;
+			remoteInfo = ZERO_CHECK;
+		};
+		C1D5CA1CDF8643B78EA339AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B41BCAFAFEE48AC88560D49;
+			remoteInfo = handy;
+		};
+		CC7D53FE749940128D38DA4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BCFDB4F9224A469FB4FD3D;
+			remoteInfo = ZERO_CHECK;
+		};
+		CDB0F4403C0D425F9580412E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BCFDB4F9224A469FB4FD3D;
+			remoteInfo = ZERO_CHECK;
+		};
+		CF07C107260846C09983E87C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF8A4C5FDD449E4AC5BADA2;
+			remoteInfo = hsha;
+		};
+		D02E11016568446589EA77B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BCFDB4F9224A469FB4FD3D;
+			remoteInfo = ZERO_CHECK;
+		};
+		D12BDB3A9BF54A35B1A3B3C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B20594244BBB4254A6B4B423;
+			remoteInfo = daemon;
+		};
+		D432C3C4C9D04958BD50813F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F2F09B1D618467995BCE377;
+			remoteInfo = "safe-close";
+		};
+		DAED5DD3922C4C569CCE5235 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B41BCAFAFEE48AC88560D49;
+			remoteInfo = handy;
+		};
+		DE14C59A73E3410FBE0B2699 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12620955CAF74DF8A822B54D;
+			remoteInfo = "udp-svr";
+		};
+		E0DD97334D9C4C59AA67BD23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47F9B2F0296D4B32910CFBA3;
+			remoteInfo = echo;
+		};
+		E3F3B010CF334A22B7C04732 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAEBA2043C7845C0B54E305A;
+			remoteInfo = "idle-close";
+		};
+		E6D6DFC076F64CAA9EC0A2E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B41BCAFAFEE48AC88560D49;
+			remoteInfo = handy;
+		};
+		E91C20FF8E05460B893CFAB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B41BCAFAFEE48AC88560D49;
+			remoteInfo = handy;
+		};
+		EE042D6ACB9E44B594FDF410 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A710EC37B304148B4BD234A;
+			remoteInfo = "http-hello";
+		};
+		FC019394CF9F44AE97AE00CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72C69D62EA6A41829A5BFF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D870CF6084B4D55B838284C;
+			remoteInfo = "udp-hsha";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02DC6F4FE9804A1B91583791 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		03A7F36DA7F3401CBE05F9F9 /* 10m-svr.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "10m-svr.cc"; path = "10m/10m-svr.cc"; sourceTree = SOURCE_ROOT; };
+		063B0B1DC5DC45F381B06EFE /* udp-cli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "udp-cli"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06A9E9D6F2724F409438789F /* 10m-cli.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "10m-cli.cc"; path = "10m/10m-cli.cc"; sourceTree = SOURCE_ROOT; };
+		08DCDAF5C6FC406996B465BE /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0A809F8822F84B85AA8A4759 /* libhandy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libhandy.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EE8988BE4E74C0393B61D09 /* write-on-empty */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "write-on-empty"; sourceTree = BUILT_PRODUCTS_DIR; };
+		134889F0BEB94E2AA311DF79 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1BAD973759E44BBB9542CCAB /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		21C392B0A5EA430EA351827E /* codec-svr.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "codec-svr.cc"; path = "examples/codec-svr.cc"; sourceTree = SOURCE_ROOT; };
+		23DF0512E2754E7A8A9F8F8D /* udp-cli.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "udp-cli.cc"; path = "examples/udp-cli.cc"; sourceTree = SOURCE_ROOT; };
+		26E445A18E6141C7A2862C7B /* daemon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = daemon; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2B3571CE344957970D0187 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		2C98C86E748D4DC78A6D26E8 /* stat-svr.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "stat-svr.cc"; path = "handy/stat-svr.cc"; sourceTree = SOURCE_ROOT; };
+		2D10E073F2DF490688968C41 /* stat.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stat.cc; path = examples/stat.cc; sourceTree = SOURCE_ROOT; };
+		2DF1988AB68443A58BE116AD /* timer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = timer; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EC0B0101E144BC6891F9BE3 /* event_base.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = event_base.cc; path = handy/event_base.cc; sourceTree = SOURCE_ROOT; };
+		31277BECE1884FDBB1195ABE /* hsha.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = hsha.cc; path = examples/hsha.cc; sourceTree = SOURCE_ROOT; };
+		32F1F563D2F64E2AA0FBD0D4 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3413D3EF378B4879AC658622 /* udp-hsha.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "udp-hsha.cc"; path = "examples/udp-hsha.cc"; sourceTree = SOURCE_ROOT; };
+		37F64C014D8B4239BDF35781 /* daemon.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = daemon.cc; path = examples/daemon.cc; sourceTree = SOURCE_ROOT; };
+		3ADA04BF588241738C359726 /* codec.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = codec.cc; path = handy/codec.cc; sourceTree = SOURCE_ROOT; };
+		3C05925CBCE6464689272829 /* threads.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = threads.cc; path = handy/threads.cc; sourceTree = SOURCE_ROOT; };
+		40F14F7A7AB14C2A883168E7 /* kqueue */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = kqueue; sourceTree = BUILT_PRODUCTS_DIR; };
+		4900AFE19BF0426BB83EA160 /* 10m-cli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "10m-cli"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5C6DD9F87C48A5A66C0310 /* reconnect.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = reconnect.cc; path = examples/reconnect.cc; sourceTree = SOURCE_ROOT; };
+		4F6EAE714FC64D23A1AFC702 /* codec-svr */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "codec-svr"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59B77F6273FF49BA94E83445 /* poller.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = poller.cc; path = handy/poller.cc; sourceTree = SOURCE_ROOT; };
+		5E14C02DF82F4391AE9D9CE5 /* util.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = util.cc; path = handy/util.cc; sourceTree = SOURCE_ROOT; };
+		614F963F07354E1AB8D5D3C2 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		61769615511A40BBAF3FD2E4 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		61F737921EE440B384D0B28D /* http-hello */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "http-hello"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6738B403BA454855A865E497 /* timer.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timer.cc; path = examples/timer.cc; sourceTree = SOURCE_ROOT; };
+		67818F51D9064A64A8946854 /* codec-cli.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "codec-cli.cc"; path = "examples/codec-cli.cc"; sourceTree = SOURCE_ROOT; };
+		6D17F40D61924502BA6B15FC /* daemon.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = daemon.cc; path = handy/daemon.cc; sourceTree = SOURCE_ROOT; };
+		6F6D8E6371564B1B8BE23792 /* idle-close */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "idle-close"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7356C0691E3149B183D99F08 /* udp-svr.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "udp-svr.cc"; path = "examples/udp-svr.cc"; sourceTree = SOURCE_ROOT; };
+		754C33E78A1249DEACF639FB /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		78A6762A1B2847E39C5158C9 /* hsha */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = hsha; sourceTree = BUILT_PRODUCTS_DIR; };
+		85B33BB075A54BB294DA483B /* safe-close.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "safe-close.cc"; path = "examples/safe-close.cc"; sourceTree = SOURCE_ROOT; };
+		87CFE68EC87E4A6DAA4581D7 /* reconnect */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = reconnect; sourceTree = BUILT_PRODUCTS_DIR; };
+		8971B9CAC82F408D9C0BA817 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8A060D71AE45483BA460E5D6 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8B549E8A76774B778A958617 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9368C34DF11B44AE90A92BC8 /* safe-close */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "safe-close"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95E8B4112F674896B446B408 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9C890262F8784AB3BD4F0BC2 /* udp-svr */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "udp-svr"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E34AFDBCF4A4DC589C7F83D /* kqueue.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = kqueue.cc; path = "raw-examples/kqueue.cc"; sourceTree = SOURCE_ROOT; };
+		A033B0B95D0B419C8CF60804 /* udp-hsha */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "udp-hsha"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3DA41034A5F44638ED3AB34 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A56C3404D42F40098441884F /* echo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = echo; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC6AA2A0EF4B408885A215BE /* stat */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = stat; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7DAE6A704A445B4A06D0285 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B8C3270A3A6B49B9AB510743 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		BB569B66563549F588DB94CE /* write-on-empty.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "write-on-empty.cc"; path = "examples/write-on-empty.cc"; sourceTree = SOURCE_ROOT; };
+		C65F539859374626A01F0F41 /* port_posix.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = port_posix.cc; path = handy/port_posix.cc; sourceTree = SOURCE_ROOT; };
+		C7FEF2351E714B51A2DFB287 /* file.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = file.cc; path = handy/file.cc; sourceTree = SOURCE_ROOT; };
+		C966275038C444B6BC82F4D9 /* http-hello.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "http-hello.cc"; path = "examples/http-hello.cc"; sourceTree = SOURCE_ROOT; };
+		CD6C2E698A7B44B592E55361 /* http.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = http.cc; path = handy/http.cc; sourceTree = SOURCE_ROOT; };
+		D2B5E97E706048FBB7281218 /* net.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = net.cc; path = handy/net.cc; sourceTree = SOURCE_ROOT; };
+		D4CD6D3284164E11AD95A79A /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D5FEFC0C9A7C49DE93C85B2B /* echo.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = echo.cc; path = examples/echo.cc; sourceTree = SOURCE_ROOT; };
+		DC3180FAE6CA4C8B953EE0A2 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DD4D2A72E22C420EAAF00B75 /* codec-cli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "codec-cli"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1008E02304C499893738141 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E5ABF161F8994E06A390E4D4 /* conf.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = conf.cc; path = handy/conf.cc; sourceTree = SOURCE_ROOT; };
+		E8CB334B67A54391AB4AA94B /* 10m-svr */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "10m-svr"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA225DAA8A5F49BBB3BBF636 /* conn.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = conn.cc; path = handy/conn.cc; sourceTree = SOURCE_ROOT; };
+		EB4607347087478C951780C7 /* logging.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = logging.cc; path = handy/logging.cc; sourceTree = SOURCE_ROOT; };
+		ED62BB00DFDE494887A91294 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		EF60F4AA64DE473FB9EE413A /* idle-close.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "idle-close.cc"; path = "examples/idle-close.cc"; sourceTree = SOURCE_ROOT; };
+		F7E28E6312A14F91BFBA5CC3 /* udp.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = udp.cc; path = handy/udp.cc; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		086DD22D2E9D4D61A54B1373 /* write-on-empty */ = {
+			isa = PBXGroup;
+			children = (
+				29B871E79F5A4C46A32D465C /* Source Files */,
+				E1008E02304C499893738141 /* CMakeLists.txt */,
+			);
+			name = "write-on-empty";
+			sourceTree = "<group>";
+		};
+		09E68172C5154A91B3CE34F8 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E34AFDBCF4A4DC589C7F83D /* kqueue.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		1043931F2C054E18AD880EFF /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				85B33BB075A54BB294DA483B /* safe-close.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		141324CA323047848BA1F902 /* http-hello */ = {
+			isa = PBXGroup;
+			children = (
+				BEE16CDB6BE248A89EA065A7 /* Source Files */,
+				95E8B4112F674896B446B408 /* CMakeLists.txt */,
+			);
+			name = "http-hello";
+			sourceTree = "<group>";
+		};
+		1A371CBC66884F8E88C67C0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4900AFE19BF0426BB83EA160 /* 10m-cli */,
+				E8CB334B67A54391AB4AA94B /* 10m-svr */,
+				DD4D2A72E22C420EAAF00B75 /* codec-cli */,
+				4F6EAE714FC64D23A1AFC702 /* codec-svr */,
+				26E445A18E6141C7A2862C7B /* daemon */,
+				A56C3404D42F40098441884F /* echo */,
+				0A809F8822F84B85AA8A4759 /* libhandy.a */,
+				78A6762A1B2847E39C5158C9 /* hsha */,
+				61F737921EE440B384D0B28D /* http-hello */,
+				6F6D8E6371564B1B8BE23792 /* idle-close */,
+				40F14F7A7AB14C2A883168E7 /* kqueue */,
+				87CFE68EC87E4A6DAA4581D7 /* reconnect */,
+				9368C34DF11B44AE90A92BC8 /* safe-close */,
+				AC6AA2A0EF4B408885A215BE /* stat */,
+				2DF1988AB68443A58BE116AD /* timer */,
+				063B0B1DC5DC45F381B06EFE /* udp-cli */,
+				A033B0B95D0B419C8CF60804 /* udp-hsha */,
+				9C890262F8784AB3BD4F0BC2 /* udp-svr */,
+				0EE8988BE4E74C0393B61D09 /* write-on-empty */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		245596A4B6974E649DCAEC02 = {
+			isa = PBXGroup;
+			children = (
+				B18E3C172F86443F9F1C7A35 /* 10m-cli */,
+				B4B1A616262D436990189CF7 /* udp-svr */,
+				E7853E2797844747BBA6AC3F /* udp-cli */,
+				C645E9B421D54F6C84AC678D /* timer */,
+				DE4795B2FC0C478CAC80FDF8 /* stat */,
+				EA406B7D804146F8B0829621 /* safe-close */,
+				43491760D7E947DAB734261F /* kqueue */,
+				3A933A7998334768AFFA9411 /* udp-hsha */,
+				141324CA323047848BA1F902 /* http-hello */,
+				C23E2B7BBDED43E7A5A32241 /* handy */,
+				A25D3DF904CF4CA88AA01726 /* hsha */,
+				446C0A6840C7449AB7599203 /* daemon */,
+				BDC29A795869454485B5E69E /* codec-svr */,
+				A813D562D6924BF8A753578E /* 10m-svr */,
+				6E8E0482FC174637AAC44533 /* idle-close */,
+				5A111FE64BB6423DB1CD4144 /* codec-cli */,
+				086DD22D2E9D4D61A54B1373 /* write-on-empty */,
+				D97AD3BC7988479481CB5BCF /* reconnect */,
+				D17466B212DC46B29C139E6C /* echo */,
+				4CF67FBEEE0E4E0DAF0FBE60 /* ALL_BUILD */,
+				1A371CBC66884F8E88C67C0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		29B871E79F5A4C46A32D465C /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB569B66563549F588DB94CE /* write-on-empty.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		2A080ED2567B414D95C79848 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D10E073F2DF490688968C41 /* stat.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		3156BAC300C0493AAB1E3675 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				6738B403BA454855A865E497 /* timer.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		38D22A046223456D951C40F2 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				23DF0512E2754E7A8A9F8F8D /* udp-cli.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		39636EE0A27041B8ABF6BCA4 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				3ADA04BF588241738C359726 /* codec.cc */,
+				E5ABF161F8994E06A390E4D4 /* conf.cc */,
+				EA225DAA8A5F49BBB3BBF636 /* conn.cc */,
+				6D17F40D61924502BA6B15FC /* daemon.cc */,
+				2EC0B0101E144BC6891F9BE3 /* event_base.cc */,
+				C7FEF2351E714B51A2DFB287 /* file.cc */,
+				CD6C2E698A7B44B592E55361 /* http.cc */,
+				EB4607347087478C951780C7 /* logging.cc */,
+				D2B5E97E706048FBB7281218 /* net.cc */,
+				59B77F6273FF49BA94E83445 /* poller.cc */,
+				C65F539859374626A01F0F41 /* port_posix.cc */,
+				2C98C86E748D4DC78A6D26E8 /* stat-svr.cc */,
+				3C05925CBCE6464689272829 /* threads.cc */,
+				F7E28E6312A14F91BFBA5CC3 /* udp.cc */,
+				5E14C02DF82F4391AE9D9CE5 /* util.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		3A933A7998334768AFFA9411 /* udp-hsha */ = {
+			isa = PBXGroup;
+			children = (
+				EB9B4509931C4A27B4A95692 /* Source Files */,
+				2A2B3571CE344957970D0187 /* CMakeLists.txt */,
+			);
+			name = "udp-hsha";
+			sourceTree = "<group>";
+		};
+		43491760D7E947DAB734261F /* kqueue */ = {
+			isa = PBXGroup;
+			children = (
+				09E68172C5154A91B3CE34F8 /* Source Files */,
+				614F963F07354E1AB8D5D3C2 /* CMakeLists.txt */,
+			);
+			name = kqueue;
+			sourceTree = "<group>";
+		};
+		446C0A6840C7449AB7599203 /* daemon */ = {
+			isa = PBXGroup;
+			children = (
+				C69E17F2B20C4A628D786651 /* Source Files */,
+				B8C3270A3A6B49B9AB510743 /* CMakeLists.txt */,
+			);
+			name = daemon;
+			sourceTree = "<group>";
+		};
+		46E8A49FE4EA439F9C99105A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				03A7F36DA7F3401CBE05F9F9 /* 10m-svr.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		4CF67FBEEE0E4E0DAF0FBE60 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				9157B32C6C604871B7CC2B7D /* CMake Rules */,
+				8B549E8A76774B778A958617 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		5A111FE64BB6423DB1CD4144 /* codec-cli */ = {
+			isa = PBXGroup;
+			children = (
+				B0E67DA00B824DB19DD465FE /* Source Files */,
+				08DCDAF5C6FC406996B465BE /* CMakeLists.txt */,
+			);
+			name = "codec-cli";
+			sourceTree = "<group>";
+		};
+		610ED384B6C04179AF2AF234 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF60F4AA64DE473FB9EE413A /* idle-close.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		6E8E0482FC174637AAC44533 /* idle-close */ = {
+			isa = PBXGroup;
+			children = (
+				610ED384B6C04179AF2AF234 /* Source Files */,
+				ED62BB00DFDE494887A91294 /* CMakeLists.txt */,
+			);
+			name = "idle-close";
+			sourceTree = "<group>";
+		};
+		7E7E2638832E49FB8CF65518 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				7356C0691E3149B183D99F08 /* udp-svr.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		8E8DB95500B044A8B3AFB8F2 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				21C392B0A5EA430EA351827E /* codec-svr.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		9157B32C6C604871B7CC2B7D /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		A25D3DF904CF4CA88AA01726 /* hsha */ = {
+			isa = PBXGroup;
+			children = (
+				D4ADC91A26844FFDBD256C38 /* Source Files */,
+				B7DAE6A704A445B4A06D0285 /* CMakeLists.txt */,
+			);
+			name = hsha;
+			sourceTree = "<group>";
+		};
+		A813D562D6924BF8A753578E /* 10m-svr */ = {
+			isa = PBXGroup;
+			children = (
+				46E8A49FE4EA439F9C99105A /* Source Files */,
+				32F1F563D2F64E2AA0FBD0D4 /* CMakeLists.txt */,
+			);
+			name = "10m-svr";
+			sourceTree = "<group>";
+		};
+		AC945A0E5B83481A84C5AEAE /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A5C6DD9F87C48A5A66C0310 /* reconnect.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B0E67DA00B824DB19DD465FE /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				67818F51D9064A64A8946854 /* codec-cli.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B18E3C172F86443F9F1C7A35 /* 10m-cli */ = {
+			isa = PBXGroup;
+			children = (
+				EF70984D16B8401AA188533E /* Source Files */,
+				DC3180FAE6CA4C8B953EE0A2 /* CMakeLists.txt */,
+			);
+			name = "10m-cli";
+			sourceTree = "<group>";
+		};
+		B4B1A616262D436990189CF7 /* udp-svr */ = {
+			isa = PBXGroup;
+			children = (
+				7E7E2638832E49FB8CF65518 /* Source Files */,
+				8971B9CAC82F408D9C0BA817 /* CMakeLists.txt */,
+			);
+			name = "udp-svr";
+			sourceTree = "<group>";
+		};
+		BDC29A795869454485B5E69E /* codec-svr */ = {
+			isa = PBXGroup;
+			children = (
+				8E8DB95500B044A8B3AFB8F2 /* Source Files */,
+				8A060D71AE45483BA460E5D6 /* CMakeLists.txt */,
+			);
+			name = "codec-svr";
+			sourceTree = "<group>";
+		};
+		BEE16CDB6BE248A89EA065A7 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				C966275038C444B6BC82F4D9 /* http-hello.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C23E2B7BBDED43E7A5A32241 /* handy */ = {
+			isa = PBXGroup;
+			children = (
+				39636EE0A27041B8ABF6BCA4 /* Source Files */,
+				754C33E78A1249DEACF639FB /* CMakeLists.txt */,
+			);
+			name = handy;
+			sourceTree = "<group>";
+		};
+		C645E9B421D54F6C84AC678D /* timer */ = {
+			isa = PBXGroup;
+			children = (
+				3156BAC300C0493AAB1E3675 /* Source Files */,
+				02DC6F4FE9804A1B91583791 /* CMakeLists.txt */,
+			);
+			name = timer;
+			sourceTree = "<group>";
+		};
+		C69E17F2B20C4A628D786651 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				37F64C014D8B4239BDF35781 /* daemon.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		D17466B212DC46B29C139E6C /* echo */ = {
+			isa = PBXGroup;
+			children = (
+				E989B736A03445D3A264EBC5 /* Source Files */,
+				61769615511A40BBAF3FD2E4 /* CMakeLists.txt */,
+			);
+			name = echo;
+			sourceTree = "<group>";
+		};
+		D4ADC91A26844FFDBD256C38 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				31277BECE1884FDBB1195ABE /* hsha.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		D97AD3BC7988479481CB5BCF /* reconnect */ = {
+			isa = PBXGroup;
+			children = (
+				AC945A0E5B83481A84C5AEAE /* Source Files */,
+				D4CD6D3284164E11AD95A79A /* CMakeLists.txt */,
+			);
+			name = reconnect;
+			sourceTree = "<group>";
+		};
+		DE4795B2FC0C478CAC80FDF8 /* stat */ = {
+			isa = PBXGroup;
+			children = (
+				2A080ED2567B414D95C79848 /* Source Files */,
+				1BAD973759E44BBB9542CCAB /* CMakeLists.txt */,
+			);
+			name = stat;
+			sourceTree = "<group>";
+		};
+		E7853E2797844747BBA6AC3F /* udp-cli */ = {
+			isa = PBXGroup;
+			children = (
+				38D22A046223456D951C40F2 /* Source Files */,
+				134889F0BEB94E2AA311DF79 /* CMakeLists.txt */,
+			);
+			name = "udp-cli";
+			sourceTree = "<group>";
+		};
+		E989B736A03445D3A264EBC5 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5FEFC0C9A7C49DE93C85B2B /* echo.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		EA406B7D804146F8B0829621 /* safe-close */ = {
+			isa = PBXGroup;
+			children = (
+				1043931F2C054E18AD880EFF /* Source Files */,
+				A3DA41034A5F44638ED3AB34 /* CMakeLists.txt */,
+			);
+			name = "safe-close";
+			sourceTree = "<group>";
+		};
+		EB9B4509931C4A27B4A95692 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				3413D3EF378B4879AC658622 /* udp-hsha.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		EF70984D16B8401AA188533E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				06A9E9D6F2724F409438789F /* 10m-cli.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09AD99A6E0F0414A88BE7AB4 /* stat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 827B5922B17A4A159EC072DD /* Build configuration list for PBXNativeTarget "stat" */;
+			buildPhases = (
+				028EB0BBA56B40F5BB86C5FC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52AAC681D6C6440D8760BDDB /* PBXTargetDependency */,
+				E7471D4FD20549A6BBDD774D /* PBXTargetDependency */,
+			);
+			name = stat;
+			productName = stat;
+			productReference = AC6AA2A0EF4B408885A215BE /* stat */;
+			productType = "com.apple.product-type.tool";
+		};
+		0A710EC37B304148B4BD234A /* http-hello */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0451F7E53C934CC3824CAB60 /* Build configuration list for PBXNativeTarget "http-hello" */;
+			buildPhases = (
+				1AA7347D90614FD99F4A1C16 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6052BB74375742CDB942C9E8 /* PBXTargetDependency */,
+				C19E6B8076F3463B8D178370 /* PBXTargetDependency */,
+			);
+			name = "http-hello";
+			productName = "http-hello";
+			productReference = 61F737921EE440B384D0B28D /* http-hello */;
+			productType = "com.apple.product-type.tool";
+		};
+		0F2F09B1D618467995BCE377 /* safe-close */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 763BAD00F08E49BEBAD27D97 /* Build configuration list for PBXNativeTarget "safe-close" */;
+			buildPhases = (
+				9D114652104146FABDA12F28 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61DFE96EBA194E50B2D1F580 /* PBXTargetDependency */,
+				98A483F8BDB5417FA9DE5700 /* PBXTargetDependency */,
+			);
+			name = "safe-close";
+			productName = "safe-close";
+			productReference = 9368C34DF11B44AE90A92BC8 /* safe-close */;
+			productType = "com.apple.product-type.tool";
+		};
+		12620955CAF74DF8A822B54D /* udp-svr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D72365C112E4A899935CE6C /* Build configuration list for PBXNativeTarget "udp-svr" */;
+			buildPhases = (
+				C32B6643FAAB4748AA71988D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				710929A408064C68B4BBC959 /* PBXTargetDependency */,
+				991151A735DD40379D31925D /* PBXTargetDependency */,
+			);
+			name = "udp-svr";
+			productName = "udp-svr";
+			productReference = 9C890262F8784AB3BD4F0BC2 /* udp-svr */;
+			productType = "com.apple.product-type.tool";
+		};
+		1D870CF6084B4D55B838284C /* udp-hsha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A91F927243E44F17A589DAA8 /* Build configuration list for PBXNativeTarget "udp-hsha" */;
+			buildPhases = (
+				4652531274A3469982BF58BF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D5ED58B5BD749629DA6273D /* PBXTargetDependency */,
+				EAD85B7F3220418B8696F523 /* PBXTargetDependency */,
+			);
+			name = "udp-hsha";
+			productName = "udp-hsha";
+			productReference = A033B0B95D0B419C8CF60804 /* udp-hsha */;
+			productType = "com.apple.product-type.tool";
+		};
+		26CD7490C19E465BA256DB3C /* 10m-svr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F55D691514E84D39BA577527 /* Build configuration list for PBXNativeTarget "10m-svr" */;
+			buildPhases = (
+				F18AED23153441ED9DE7671A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98589C4FD2644602A1012AF2 /* PBXTargetDependency */,
+				AAF76D5ACBC04682B2625BE0 /* PBXTargetDependency */,
+			);
+			name = "10m-svr";
+			productName = "10m-svr";
+			productReference = E8CB334B67A54391AB4AA94B /* 10m-svr */;
+			productType = "com.apple.product-type.tool";
+		};
+		33CDE597C522481EB38306D7 /* write-on-empty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B93B0DC5C5742E58C3DE882 /* Build configuration list for PBXNativeTarget "write-on-empty" */;
+			buildPhases = (
+				E30595DB31444F0DAE5B66BD /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				670EF259B1954B58AFD52256 /* PBXTargetDependency */,
+				87CEF9F3D9DE4AD69FC1C693 /* PBXTargetDependency */,
+			);
+			name = "write-on-empty";
+			productName = "write-on-empty";
+			productReference = 0EE8988BE4E74C0393B61D09 /* write-on-empty */;
+			productType = "com.apple.product-type.tool";
+		};
+		47F9B2F0296D4B32910CFBA3 /* echo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14A92169F67A402D843F8A52 /* Build configuration list for PBXNativeTarget "echo" */;
+			buildPhases = (
+				96D718E1208844D9808779C2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03FF81141944417EAF0BF82C /* PBXTargetDependency */,
+				FB254B8264334BB895167D9A /* PBXTargetDependency */,
+			);
+			name = echo;
+			productName = echo;
+			productReference = A56C3404D42F40098441884F /* echo */;
+			productType = "com.apple.product-type.tool";
+		};
+		559F57C51D4046439834BBCA /* reconnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9F0C7011D0A460C82F9DB9B /* Build configuration list for PBXNativeTarget "reconnect" */;
+			buildPhases = (
+				03101D6C6D804E499CF716FF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D3E30A1BCF34CFD8DEF1F97 /* PBXTargetDependency */,
+				70FFB9DE0EEB4D3880D95A07 /* PBXTargetDependency */,
+			);
+			name = reconnect;
+			productName = reconnect;
+			productReference = 87CFE68EC87E4A6DAA4581D7 /* reconnect */;
+			productType = "com.apple.product-type.tool";
+		};
+		5B41BCAFAFEE48AC88560D49 /* handy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 064B053AA871485F95F62EAD /* Build configuration list for PBXNativeTarget "handy" */;
+			buildPhases = (
+				03890235A5634E82983DDDE5 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF48A104E8934C108B32DB99 /* PBXTargetDependency */,
+			);
+			name = handy;
+			productName = handy;
+			productReference = 0A809F8822F84B85AA8A4759 /* libhandy.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		842D4750182D49009019DC7C /* 10m-cli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF8846150DA544AD821799FF /* Build configuration list for PBXNativeTarget "10m-cli" */;
+			buildPhases = (
+				F1CE5F238C0340C08800747E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF9B51EDCEF442DCB4468202 /* PBXTargetDependency */,
+				78C9597D50F5495AA88219AB /* PBXTargetDependency */,
+			);
+			name = "10m-cli";
+			productName = "10m-cli";
+			productReference = 4900AFE19BF0426BB83EA160 /* 10m-cli */;
+			productType = "com.apple.product-type.tool";
+		};
+		B20594244BBB4254A6B4B423 /* daemon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57F3AA7670F04A0D82E3EF76 /* Build configuration list for PBXNativeTarget "daemon" */;
+			buildPhases = (
+				BE1E93FA491D4F99BE42A3CE /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D10E2123B453495C8405E217 /* PBXTargetDependency */,
+				6040E89A16784D55989F57C1 /* PBXTargetDependency */,
+			);
+			name = daemon;
+			productName = daemon;
+			productReference = 26E445A18E6141C7A2862C7B /* daemon */;
+			productType = "com.apple.product-type.tool";
+		};
+		BBC9ED7DA8394125B80B24D5 /* codec-svr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A761A2B805145E0959D3A79 /* Build configuration list for PBXNativeTarget "codec-svr" */;
+			buildPhases = (
+				DED603D70BF94493B2F9ABFC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				484ABC1CFBFF43B3849F9EA0 /* PBXTargetDependency */,
+				C090A3E9291F41BF9EF9DF4A /* PBXTargetDependency */,
+			);
+			name = "codec-svr";
+			productName = "codec-svr";
+			productReference = 4F6EAE714FC64D23A1AFC702 /* codec-svr */;
+			productType = "com.apple.product-type.tool";
+		};
+		BEF8A4C5FDD449E4AC5BADA2 /* hsha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF3F000424648A88508DB9F /* Build configuration list for PBXNativeTarget "hsha" */;
+			buildPhases = (
+				B5E0ECD5F4CE4A678EE94452 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4F91622B4DE4038A33FF81E /* PBXTargetDependency */,
+				219F7F9F15484E8A9261456F /* PBXTargetDependency */,
+			);
+			name = hsha;
+			productName = hsha;
+			productReference = 78A6762A1B2847E39C5158C9 /* hsha */;
+			productType = "com.apple.product-type.tool";
+		};
+		CAEBA2043C7845C0B54E305A /* idle-close */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 496A75DB28EA4EEABFDA585E /* Build configuration list for PBXNativeTarget "idle-close" */;
+			buildPhases = (
+				200B8E5CB7054D70B37D9257 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EFFEBD38CF447C6B353046A /* PBXTargetDependency */,
+				B5632F7C990049E48A255CD1 /* PBXTargetDependency */,
+			);
+			name = "idle-close";
+			productName = "idle-close";
+			productReference = 6F6D8E6371564B1B8BE23792 /* idle-close */;
+			productType = "com.apple.product-type.tool";
+		};
+		CEEEEAAF9C25483FBD5DB0E4 /* kqueue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDCDE54DE44F4A79978352B9 /* Build configuration list for PBXNativeTarget "kqueue" */;
+			buildPhases = (
+				FF28DB44F8E04CB9B9B4E959 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5DB4809404A44819622C98E /* PBXTargetDependency */,
+				55884134A710453796617D77 /* PBXTargetDependency */,
+			);
+			name = kqueue;
+			productName = kqueue;
+			productReference = 40F14F7A7AB14C2A883168E7 /* kqueue */;
+			productType = "com.apple.product-type.tool";
+		};
+		DB4D4528622F4EF48BC5D7CC /* codec-cli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 733092AB2245423A9413F22D /* Build configuration list for PBXNativeTarget "codec-cli" */;
+			buildPhases = (
+				A1070989EE1A4BC995DC6EC1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59BB7D566C32406CBFA44DBA /* PBXTargetDependency */,
+				CD9A2271C5FC4EF0B443C5DF /* PBXTargetDependency */,
+			);
+			name = "codec-cli";
+			productName = "codec-cli";
+			productReference = DD4D2A72E22C420EAAF00B75 /* codec-cli */;
+			productType = "com.apple.product-type.tool";
+		};
+		DB7CB560A4F04C6ABB051A07 /* timer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63DEC979638E49EE97ADB3F6 /* Build configuration list for PBXNativeTarget "timer" */;
+			buildPhases = (
+				68D5C17D8ACC4B808D92FC66 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B80DCCC370E4B278C92D8A0 /* PBXTargetDependency */,
+				BAC60BD2A984429E9E2A4313 /* PBXTargetDependency */,
+			);
+			name = timer;
+			productName = timer;
+			productReference = 2DF1988AB68443A58BE116AD /* timer */;
+			productType = "com.apple.product-type.tool";
+		};
+		DD963DC87A674E4EBACC2803 /* udp-cli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FF6D53BAE084DB188C1DBC5 /* Build configuration list for PBXNativeTarget "udp-cli" */;
+			buildPhases = (
+				88C7884142DB4110B1974302 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB85D0D9C51E4790B9073EA8 /* PBXTargetDependency */,
+				2898E5D3C24F4114BABD27A2 /* PBXTargetDependency */,
+			);
+			name = "udp-cli";
+			productName = "udp-cli";
+			productReference = 063B0B1DC5DC45F381B06EFE /* udp-cli */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72C69D62EA6A41829A5BFF06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1010;
+			};
+			buildConfigurationList = 8152B38B6D9F4236A4C49349 /* Build configuration list for PBXProject "echo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 245596A4B6974E649DCAEC02;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				7913A729DC364FBB9546CA84 /* ALL_BUILD */,
+				842D4750182D49009019DC7C /* 10m-cli */,
+				26CD7490C19E465BA256DB3C /* 10m-svr */,
+				98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */,
+				DB4D4528622F4EF48BC5D7CC /* codec-cli */,
+				BBC9ED7DA8394125B80B24D5 /* codec-svr */,
+				B20594244BBB4254A6B4B423 /* daemon */,
+				47F9B2F0296D4B32910CFBA3 /* echo */,
+				5B41BCAFAFEE48AC88560D49 /* handy */,
+				BEF8A4C5FDD449E4AC5BADA2 /* hsha */,
+				0A710EC37B304148B4BD234A /* http-hello */,
+				CAEBA2043C7845C0B54E305A /* idle-close */,
+				CEEEEAAF9C25483FBD5DB0E4 /* kqueue */,
+				559F57C51D4046439834BBCA /* reconnect */,
+				0F2F09B1D618467995BCE377 /* safe-close */,
+				09AD99A6E0F0414A88BE7AB4 /* stat */,
+				DB7CB560A4F04C6ABB051A07 /* timer */,
+				DD963DC87A674E4EBACC2803 /* udp-cli */,
+				1D870CF6084B4D55B838284C /* udp-hsha */,
+				12620955CAF74DF8A822B54D /* udp-svr */,
+				33CDE597C522481EB38306D7 /* write-on-empty */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00BCB3CF3C8A4E74901524E8 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/admin/src/cpp/handy/ios -f /Users/admin/src/cpp/handy/ios/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		222A9C12ADFF40F6B383B181 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/admin/src/cpp/handy/ios -f /Users/admin/src/cpp/handy/ios/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		028EB0BBA56B40F5BB86C5FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C131CED2FB9C4310B185DACF /* stat.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03101D6C6D804E499CF716FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				408B908A2B194387B96CCE34 /* reconnect.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03890235A5634E82983DDDE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0850FA5D342A462D8E747429 /* codec.cc in Sources */,
+				B29FFC3612AA43DF90225076 /* conf.cc in Sources */,
+				0CC8EBA2E795440880183733 /* conn.cc in Sources */,
+				455A7DD3EAC846C9AF48C8D5 /* daemon.cc in Sources */,
+				41C759E640FA4F77831239FB /* event_base.cc in Sources */,
+				C28F01240106487F90EA6D97 /* file.cc in Sources */,
+				79C3FBD619F9436FA8CAE203 /* http.cc in Sources */,
+				12A7350241664200AD5CE6A9 /* logging.cc in Sources */,
+				4DDBA51A42604AA3B0B8CD06 /* net.cc in Sources */,
+				94C132C2D30C480DA7D070B4 /* poller.cc in Sources */,
+				22F7CBD023DA4027855F531B /* port_posix.cc in Sources */,
+				3606D071F7D34F86B1F15BA3 /* stat-svr.cc in Sources */,
+				7DEA1ACCECE0492F8C6B7234 /* threads.cc in Sources */,
+				A040B15F491A4F37BCDB9097 /* udp.cc in Sources */,
+				1963F372E5D64101A9E885EA /* util.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AA7347D90614FD99F4A1C16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A334174BCA41E391A2EC6F /* http-hello.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		200B8E5CB7054D70B37D9257 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8239B50DEDA045B1A278CBDF /* idle-close.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4652531274A3469982BF58BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98EDA7E9A35A4F1FB09FE45B /* udp-hsha.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D5C17D8ACC4B808D92FC66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED16D5C15EC4E148D1D04E6 /* timer.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88C7884142DB4110B1974302 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2BA02AE16F4F9B8064DAAC /* udp-cli.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96D718E1208844D9808779C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C7EA0A14FB477BA14D9306 /* echo.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D114652104146FABDA12F28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC9EF23FD7A4CF885B714A4 /* safe-close.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1070989EE1A4BC995DC6EC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F13917E8289C416FBCEF9C4D /* codec-cli.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5E0ECD5F4CE4A678EE94452 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B62A29F4C949A5935B9F3E /* hsha.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE1E93FA491D4F99BE42A3CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB3D1129D0504A4EA8D38368 /* daemon.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32B6643FAAB4748AA71988D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C56E505A1FD438F99D5582C /* udp-svr.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DED603D70BF94493B2F9ABFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48D14B6DD39742919248E64D /* codec-svr.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E30595DB31444F0DAE5B66BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7CC8FCC34140F49A479FE7 /* write-on-empty.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F18AED23153441ED9DE7671A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86A22535288E4872B1A4D456 /* 10m-svr.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CE5F238C0340C08800747E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1179F704EC194A3CA36489EC /* 10m-cli.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF28DB44F8E04CB9B9B4E959 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92D42A1BEBA745779AA9DD35 /* kqueue.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03FF81141944417EAF0BF82C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B41BCAFAFEE48AC88560D49 /* handy */;
+			targetProxy = 1625B36B0D764B238C7A1072 /* PBXContainerItemProxy */;
+		};
+		05DFCA50EE3948D996A19773 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12620955CAF74DF8A822B54D /* udp-svr */;
+			targetProxy = DE14C59A73E3410FBE0B2699 /* PBXContainerItemProxy */;
+		};
+		1F40ECDE09B14037AAE3699D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 842D4750182D49009019DC7C /* 10m-cli */;
+			targetProxy = 44B58B01287D4F0484EC867A /* PBXContainerItemProxy */;
+		};
+		219F7F9F15484E8A9261456F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */;
+			targetProxy = C0218AAABDAD4DEBBDCC2309 /* PBXContainerItemProxy */;
+		};
+		2898E5D3C24F4114BABD27A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */;
+			targetProxy = 465DDCC72D704B988E40337C /* PBXContainerItemProxy */;
+		};
+		2B4288BF5B21447E951C0CC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEF8A4C5FDD449E4AC5BADA2 /* hsha */;
+			targetProxy = CF07C107260846C09983E87C /* PBXContainerItemProxy */;
+		};
+		2D689DC6E41542BCBCF65BFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A710EC37B304148B4BD234A /* http-hello */;
+			targetProxy = EE042D6ACB9E44B594FDF410 /* PBXContainerItemProxy */;
+		};
+		2D93EFFA2AEB433E952663E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEEEAAF9C25483FBD5DB0E4 /* kqueue */;
+			targetProxy = 64F64C29625343279CAC1FA8 /* PBXContainerItemProxy */;
+		};
+		39AE521354444BF8862EE732 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26CD7490C19E465BA256DB3C /* 10m-svr */;
+			targetProxy = 6D958DF063E947318C0DF4E3 /* PBXContainerItemProxy */;
+		};
+		3A0576EED4714A9B8346155B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B20594244BBB4254A6B4B423 /* daemon */;
+			targetProxy = D12BDB3A9BF54A35B1A3B3C4 /* PBXContainerItemProxy */;
+		};
+		3C02DF0C8BBB4ACFB41EACA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F2F09B1D618467995BCE377 /* safe-close */;
+			targetProxy = D432C3C4C9D04958BD50813F /* PBXContainerItemProxy */;
+		};
+		42BEC0332F4E47F2991626EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47F9B2F0296D4B32910CFBA3 /* echo */;
+			targetProxy = E0DD97334D9C4C59AA67BD23 /* PBXContainerItemProxy */;
+		};
+		42C3B2CAED044F2DB6C108D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAEBA2043C7845C0B54E305A /* idle-close */;
+			targetProxy = E3F3B010CF334A22B7C04732 /* PBXContainerItemProxy */;
+		};
+		484ABC1CFBFF43B3849F9EA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B41BCAFAFEE48AC88560D49 /* handy */;
+			targetProxy = 0BF38C3AD5044A42B5E9FF4F /* PBXContainerItemProxy */;
+		};
+		4C504E8C1A9C487EAC05E717 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B41BCAFAFEE48AC88560D49 /* handy */;
+			targetProxy = 1F70AE5811E44130B04C2B74 /* PBXContainerItemProxy */;
+		};
+		52AAC681D6C6440D8760BDDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B41BCAFAFEE48AC88560D49 /* handy */;
+			targetProxy = E6D6DFC076F64CAA9EC0A2E7 /* PBXContainerItemProxy */;
+		};
+		55884134A710453796617D77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */;
+			targetProxy = CC7D53FE749940128D38DA4D /* PBXContainerItemProxy */;
+		};
+		59BB7D566C32406CBFA44DBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B41BCAFAFEE48AC88560D49 /* handy */;
+			targetProxy = 29622CA175EB45189D04A8D0 /* PBXContainerItemProxy */;
+		};
+		5B80DCCC370E4B278C92D8A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B41BCAFAFEE48AC88560D49 /* handy */;
+			targetProxy = 1B9767AC9B7046CEB103C71C /* PBXContainerItemProxy */;
+		};
+		6040E89A16784D55989F57C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */;
+			targetProxy = 7C5DD238CCAF4B3EBD1CC1A4 /* PBXContainerItemProxy */;
+		};
+		6052BB74375742CDB942C9E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B41BCAFAFEE48AC88560D49 /* handy */;
+			targetProxy = DAED5DD3922C4C569CCE5235 /* PBXContainerItemProxy */;
+		};
+		61DFE96EBA194E50B2D1F580 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B41BCAFAFEE48AC88560D49 /* handy */;
+			targetProxy = E91C20FF8E05460B893CFAB4 /* PBXContainerItemProxy */;
+		};
+		670EF259B1954B58AFD52256 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B41BCAFAFEE48AC88560D49 /* handy */;
+			targetProxy = C1D5CA1CDF8643B78EA339AB /* PBXContainerItemProxy */;
+		};
+		6D3E30A1BCF34CFD8DEF1F97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B41BCAFAFEE48AC88560D49 /* handy */;
+			targetProxy = AB5F4A1602D84B7ABD8FAA23 /* PBXContainerItemProxy */;
+		};
+		6EFFEBD38CF447C6B353046A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B41BCAFAFEE48AC88560D49 /* handy */;
+			targetProxy = 6EE89984E1474379A0A52953 /* PBXContainerItemProxy */;
+		};
+		70FFB9DE0EEB4D3880D95A07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */;
+			targetProxy = B8C8EC344D6B4DB2A8A69740 /* PBXContainerItemProxy */;
+		};
+		710929A408064C68B4BBC959 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B41BCAFAFEE48AC88560D49 /* handy */;
+			targetProxy = 9880EF88C2D1431293F2D4BE /* PBXContainerItemProxy */;
+		};
+		740C7198A7E14AF3844D9C8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB7CB560A4F04C6ABB051A07 /* timer */;
+			targetProxy = B0FBA31D92964FFAA17B98D3 /* PBXContainerItemProxy */;
+		};
+		78C9597D50F5495AA88219AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */;
+			targetProxy = 0954EE9AB2ED4449ACF2DD29 /* PBXContainerItemProxy */;
+		};
+		7D5ED58B5BD749629DA6273D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B41BCAFAFEE48AC88560D49 /* handy */;
+			targetProxy = A1B3FB7E051A46E9B3EF66DB /* PBXContainerItemProxy */;
+		};
+		87CEF9F3D9DE4AD69FC1C693 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */;
+			targetProxy = B7E6754DD1E540898FD5AFCC /* PBXContainerItemProxy */;
+		};
+		93E027B06CFC49CFA1884300 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09AD99A6E0F0414A88BE7AB4 /* stat */;
+			targetProxy = 5BEC5A52097E43F4B119E0B2 /* PBXContainerItemProxy */;
+		};
+		98589C4FD2644602A1012AF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B41BCAFAFEE48AC88560D49 /* handy */;
+			targetProxy = 307840395D0C4E749E984A5E /* PBXContainerItemProxy */;
+		};
+		98A483F8BDB5417FA9DE5700 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */;
+			targetProxy = 72CAC04D1770461B9DD0FFFD /* PBXContainerItemProxy */;
+		};
+		991151A735DD40379D31925D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */;
+			targetProxy = 0EC4D335E74340D396D8E582 /* PBXContainerItemProxy */;
+		};
+		A5DB4809404A44819622C98E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B41BCAFAFEE48AC88560D49 /* handy */;
+			targetProxy = 7E6CCFF53C0D4739A158A1B0 /* PBXContainerItemProxy */;
+		};
+		A8E2A2B739DC48CBAF8D7448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB4D4528622F4EF48BC5D7CC /* codec-cli */;
+			targetProxy = 1D87C3BF989C42528168C3D0 /* PBXContainerItemProxy */;
+		};
+		AAF76D5ACBC04682B2625BE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */;
+			targetProxy = CDB0F4403C0D425F9580412E /* PBXContainerItemProxy */;
+		};
+		B4F91622B4DE4038A33FF81E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B41BCAFAFEE48AC88560D49 /* handy */;
+			targetProxy = 62A5045828524A7AA42D1FA7 /* PBXContainerItemProxy */;
+		};
+		B5632F7C990049E48A255CD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */;
+			targetProxy = BA54D8AB83154794BAC8D999 /* PBXContainerItemProxy */;
+		};
+		BAC60BD2A984429E9E2A4313 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */;
+			targetProxy = 6BB7C244AA56467B9A17B83F /* PBXContainerItemProxy */;
+		};
+		C090A3E9291F41BF9EF9DF4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */;
+			targetProxy = D02E11016568446589EA77B3 /* PBXContainerItemProxy */;
+		};
+		C19E6B8076F3463B8D178370 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */;
+			targetProxy = 49720CF00B2C40BB99B2F1D0 /* PBXContainerItemProxy */;
+		};
+		CD9A2271C5FC4EF0B443C5DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */;
+			targetProxy = 3EC853E83EC844E3970FC928 /* PBXContainerItemProxy */;
+		};
+		D10E2123B453495C8405E217 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B41BCAFAFEE48AC88560D49 /* handy */;
+			targetProxy = B96F7C22050D479686957167 /* PBXContainerItemProxy */;
+		};
+		D444FBBF79294E67A7FE5E13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD963DC87A674E4EBACC2803 /* udp-cli */;
+			targetProxy = 07173229E5D44F8BBD824D5D /* PBXContainerItemProxy */;
+		};
+		DD8C0F17756344EF869886BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D870CF6084B4D55B838284C /* udp-hsha */;
+			targetProxy = FC019394CF9F44AE97AE00CE /* PBXContainerItemProxy */;
+		};
+		E3B9ADA2595743028818248E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBC9ED7DA8394125B80B24D5 /* codec-svr */;
+			targetProxy = 14C82D881D3740D2B6B6FD30 /* PBXContainerItemProxy */;
+		};
+		E7471D4FD20549A6BBDD774D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */;
+			targetProxy = 871831F55241419BA63D0F6F /* PBXContainerItemProxy */;
+		};
+		EAD85B7F3220418B8696F523 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */;
+			targetProxy = 4794334518044D4A81C49C6E /* PBXContainerItemProxy */;
+		};
+		EF48A104E8934C108B32DB99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */;
+			targetProxy = A62FA1953D444B04B8633198 /* PBXContainerItemProxy */;
+		};
+		EF9B51EDCEF442DCB4468202 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B41BCAFAFEE48AC88560D49 /* handy */;
+			targetProxy = 9CA1B2C142E94E62A68FB0F3 /* PBXContainerItemProxy */;
+		};
+		F1F4573FC04B4CBA827BD7F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33CDE597C522481EB38306D7 /* write-on-empty */;
+			targetProxy = ABA4614211C64CBD9FB457AA /* PBXContainerItemProxy */;
+		};
+		F8CFFA8DD74843B1856F9010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */;
+			targetProxy = 9CF754E948DB4B4D9C3AD4D0 /* PBXContainerItemProxy */;
+		};
+		FB254B8264334BB895167D9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BCFDB4F9224A469FB4FD3D /* ZERO_CHECK */;
+			targetProxy = AE1D65BEEE2A4FAEAE6BAD4D /* PBXContainerItemProxy */;
+		};
+		FB85D0D9C51E4790B9073EA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B41BCAFAFEE48AC88560D49 /* handy */;
+			targetProxy = 3F81DFD4AF804EAF94F0EA39 /* PBXContainerItemProxy */;
+		};
+		FC4EF43A7B554F58B69A5B6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 559F57C51D4046439834BBCA /* reconnect */;
+			targetProxy = 235969A28DD4490CBC134D1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04DD031CD37A404CBFD05978 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		068F0997DE0F46C19A3B6B3B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "http-hello";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		09D69B0373CA4CE381C6FCA8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "write-on-empty";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		0BBF2375D9CF4F4D81823944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk;
+				SYMROOT = /Users/admin/src/cpp/handy/ios/build;
+			};
+			name = Release;
+		};
+		135CE98B331942CFBAB9FCC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Debug${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = kqueue;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		143D0F6E090748EEA79825CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Debug${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "http-hello";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		15FCB01709924E12BE95542C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Debug${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "udp-svr";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		1B39BDA94D35494DA5C63F78 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		24967968C23F4CA98FC38130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Debug${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = reconnect;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		2B9F9DE559004BB699790A53 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = echo;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		2DE4D08DAB704004AF826E61 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "codec-cli";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		34059F25D20543C98DD9EC32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Release${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stat;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		361D046DA9454781AAF890EA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = daemon;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		3669F14ED48C40D696E0B871 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "write-on-empty";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		3805CD86A6AC4A20AB0D4764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Release${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "http-hello";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		3949CFA263414E2AB5024BF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Debug${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = hsha;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		41E6A618ED4F49E99CE1CD44 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stat;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		442080C9D40145548253F0FC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "udp-cli";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		47A64E56B7974C9996714354 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		4A33AC66F3D1445AB7E7A27B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Debug${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = timer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		508C57A334324337AC8925CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Release${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "codec-svr";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		535E3F4904A74A55AFFE941C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Debug${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "10m-svr";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		53ED477AEFC641F69EEC0084 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stat;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		5C1D5CFE07F84FC88F87DF5A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = kqueue;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		5FECA96E884249C1B19A8CF0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "codec-svr";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		6308B579652F401FBE21C6EC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "idle-close";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		6440AF4027054D06B1BB29E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Release${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "udp-cli";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		669427CAC5254C99AC3A36AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = handy;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		684D79FBA60C419681CCE4C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Debug${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stat;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		6AB486776D5D4C6287D0A194 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "udp-svr";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		6CBABD79379942678FB3E894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Release${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "write-on-empty";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		7344FAD54FF24EBA82FFAB80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Release${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "codec-cli";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		77EA04EABB1348C9AD398522 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Debug${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "10m-cli";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		791F6C1C08F64FDA82408962 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Release${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = echo;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		7A7EB3DCC8614050BADF3CD7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = echo;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		871D5ED5F5754BDC95DD9C73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Release${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "10m-cli";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		8965688A85B7473197029690 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "codec-cli";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		8A4B446C686D47CD92011452 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "codec-svr";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		8B1E04A1F21A4C1294F82F5A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = kqueue;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		8B94FE505D704DFAB56CF13C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		8C0A25BFB06C4DE8809B14B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Debug${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "safe-close";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		8EF73663856345EDAB009F14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		903C345156924D1A94456512 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = timer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		91F798D0465E47FCB9DFBC2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Debug${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "write-on-empty";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		923952951EAA487DB5391738 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = daemon;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		947731DE63F640259FB72BA3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		9660CAB0A57D488C8CB08BFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Release${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = daemon;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		9AE20007CCB04521A0E5E818 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk;
+				SYMROOT = /Users/admin/src/cpp/handy/ios/build;
+			};
+			name = Debug;
+		};
+		9D8BB393A0D14297B4BBA89B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		A01F635716E0486F85797D70 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = reconnect;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		A0F5A4572D2245A0AEBC1998 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = timer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		A16C8999AF7443AA8493B772 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "udp-cli";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		A71153A6B1C04848A02EE6DD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "http-hello";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		AEB2D1E3738345A395133308 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Release${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = timer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		AFAE60E0C0544C01BDCEB32A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "10m-cli";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		AFC956374B80462BB7B79D34 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk;
+				SYMROOT = /Users/admin/src/cpp/handy/ios/build;
+			};
+			name = MinSizeRel;
+		};
+		B1443AF61EF64C6D850DA8AF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = handy;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		B1687720F06A42958F549909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Debug${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "udp-hsha";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		B2379691A85E48B2BE2840AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Release${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "10m-svr";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		B3CC86E090B34DFD97E58EBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Debug${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "codec-cli";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		B55E8F0A7A7949C19EE651C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Release${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "safe-close";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		BA740145AD8E4C73B90472CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Debug${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = echo;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		C11A1DB15A984513A6D030D8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = hsha;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		C4A74EE26B6C4CCF8EFA7D1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Release${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = kqueue;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		C5740FCE29DC4282B01C2D11 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "10m-svr";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		C654EAC71D4846B5896C7B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Release${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = reconnect;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		C7843FED36044EB5BD6F91D5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "safe-close";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		CA14DBDBEF8D4B478898FF40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Debug${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = daemon;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		CEB33A3BFAAD47B6834F0D02 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk;
+				SYMROOT = /Users/admin/src/cpp/handy/ios/build;
+			};
+			name = RelWithDebInfo;
+		};
+		CFA2FED271EC44CE891332DB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = hsha;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		D1DCB43060B14CF8A06E898C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Release${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "idle-close";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		D2E9D3D15F0944629EEED13C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Debug${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "codec-svr";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		D2FEA97441BB4F4DA3F4A6B4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "idle-close";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		D5EDDCFDDD464E0A8E25B326 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "udp-svr";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		DAA5E02374BB49BE91B7A8AA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "udp-hsha";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		E1AAC61AF10F45A19C62C074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Debug${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "idle-close";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		E23695E6756A4204ACD068AF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = handy;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		EC386E241493483DA04A36EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Release${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "udp-svr";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		EDAC4C1357F24821AC1E0F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Debug${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "udp-cli";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		EF7A88B610944DDC9D7DF33C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "10m-svr";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		EFD046AE8D97456FAEFE7019 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "udp-hsha";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		F3C31C97F006428E865BCE16 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = reconnect;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		F41EC980DC4C4ACCA79E9A54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		F7B6912BBA0946BF9A5D881F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "safe-close";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		F8844E88D87247AA8CAD25E5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "10m-cli";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		FB341422467E47F0AD350E8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Release${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = hsha;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		FBB024E238F94413B4D5B29E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = handy;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		FCB08A0AB83A4F51A36E90AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					OS_MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/admin/src/cpp/handy;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"/Users/admin/src/cpp/handy/ios/Release${EFFECTIVE_PLATFORM_NAME}/libhandy.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "udp-hsha";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/admin/src/cpp/handy/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0451F7E53C934CC3824CAB60 /* Build configuration list for PBXNativeTarget "http-hello" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143D0F6E090748EEA79825CC /* Debug */,
+				3805CD86A6AC4A20AB0D4764 /* Release */,
+				A71153A6B1C04848A02EE6DD /* MinSizeRel */,
+				068F0997DE0F46C19A3B6B3B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		064B053AA871485F95F62EAD /* Build configuration list for PBXNativeTarget "handy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB024E238F94413B4D5B29E /* Debug */,
+				669427CAC5254C99AC3A36AC /* Release */,
+				B1443AF61EF64C6D850DA8AF /* MinSizeRel */,
+				E23695E6756A4204ACD068AF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		121D890D36E441699028A24D /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F41EC980DC4C4ACCA79E9A54 /* Debug */,
+				8B94FE505D704DFAB56CF13C /* Release */,
+				947731DE63F640259FB72BA3 /* MinSizeRel */,
+				04DD031CD37A404CBFD05978 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		14A92169F67A402D843F8A52 /* Build configuration list for PBXNativeTarget "echo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA740145AD8E4C73B90472CB /* Debug */,
+				791F6C1C08F64FDA82408962 /* Release */,
+				2B9F9DE559004BB699790A53 /* MinSizeRel */,
+				7A7EB3DCC8614050BADF3CD7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1FF6D53BAE084DB188C1DBC5 /* Build configuration list for PBXNativeTarget "udp-cli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDAC4C1357F24821AC1E0F1B /* Debug */,
+				6440AF4027054D06B1BB29E1 /* Release */,
+				442080C9D40145548253F0FC /* MinSizeRel */,
+				A16C8999AF7443AA8493B772 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		496A75DB28EA4EEABFDA585E /* Build configuration list for PBXNativeTarget "idle-close" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1AAC61AF10F45A19C62C074 /* Debug */,
+				D1DCB43060B14CF8A06E898C /* Release */,
+				6308B579652F401FBE21C6EC /* MinSizeRel */,
+				D2FEA97441BB4F4DA3F4A6B4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4B93B0DC5C5742E58C3DE882 /* Build configuration list for PBXNativeTarget "write-on-empty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91F798D0465E47FCB9DFBC2C /* Debug */,
+				6CBABD79379942678FB3E894 /* Release */,
+				09D69B0373CA4CE381C6FCA8 /* MinSizeRel */,
+				3669F14ED48C40D696E0B871 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		553008DE3246483C9ACB1B01 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D8BB393A0D14297B4BBA89B /* Debug */,
+				8EF73663856345EDAB009F14 /* Release */,
+				47A64E56B7974C9996714354 /* MinSizeRel */,
+				1B39BDA94D35494DA5C63F78 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		57F3AA7670F04A0D82E3EF76 /* Build configuration list for PBXNativeTarget "daemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA14DBDBEF8D4B478898FF40 /* Debug */,
+				9660CAB0A57D488C8CB08BFC /* Release */,
+				361D046DA9454781AAF890EA /* MinSizeRel */,
+				923952951EAA487DB5391738 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		63DEC979638E49EE97ADB3F6 /* Build configuration list for PBXNativeTarget "timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A33AC66F3D1445AB7E7A27B /* Debug */,
+				AEB2D1E3738345A395133308 /* Release */,
+				903C345156924D1A94456512 /* MinSizeRel */,
+				A0F5A4572D2245A0AEBC1998 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6A761A2B805145E0959D3A79 /* Build configuration list for PBXNativeTarget "codec-svr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2E9D3D15F0944629EEED13C /* Debug */,
+				508C57A334324337AC8925CE /* Release */,
+				8A4B446C686D47CD92011452 /* MinSizeRel */,
+				5FECA96E884249C1B19A8CF0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		733092AB2245423A9413F22D /* Build configuration list for PBXNativeTarget "codec-cli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3CC86E090B34DFD97E58EBA /* Debug */,
+				7344FAD54FF24EBA82FFAB80 /* Release */,
+				8965688A85B7473197029690 /* MinSizeRel */,
+				2DE4D08DAB704004AF826E61 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		763BAD00F08E49BEBAD27D97 /* Build configuration list for PBXNativeTarget "safe-close" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C0A25BFB06C4DE8809B14B4 /* Debug */,
+				B55E8F0A7A7949C19EE651C8 /* Release */,
+				F7B6912BBA0946BF9A5D881F /* MinSizeRel */,
+				C7843FED36044EB5BD6F91D5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8152B38B6D9F4236A4C49349 /* Build configuration list for PBXProject "echo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AE20007CCB04521A0E5E818 /* Debug */,
+				0BBF2375D9CF4F4D81823944 /* Release */,
+				AFC956374B80462BB7B79D34 /* MinSizeRel */,
+				CEB33A3BFAAD47B6834F0D02 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		827B5922B17A4A159EC072DD /* Build configuration list for PBXNativeTarget "stat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				684D79FBA60C419681CCE4C6 /* Debug */,
+				34059F25D20543C98DD9EC32 /* Release */,
+				41E6A618ED4F49E99CE1CD44 /* MinSizeRel */,
+				53ED477AEFC641F69EEC0084 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8D72365C112E4A899935CE6C /* Build configuration list for PBXNativeTarget "udp-svr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15FCB01709924E12BE95542C /* Debug */,
+				EC386E241493483DA04A36EF /* Release */,
+				D5EDDCFDDD464E0A8E25B326 /* MinSizeRel */,
+				6AB486776D5D4C6287D0A194 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A91F927243E44F17A589DAA8 /* Build configuration list for PBXNativeTarget "udp-hsha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1687720F06A42958F549909 /* Debug */,
+				FCB08A0AB83A4F51A36E90AE /* Release */,
+				EFD046AE8D97456FAEFE7019 /* MinSizeRel */,
+				DAA5E02374BB49BE91B7A8AA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C9F0C7011D0A460C82F9DB9B /* Build configuration list for PBXNativeTarget "reconnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24967968C23F4CA98FC38130 /* Debug */,
+				C654EAC71D4846B5896C7B24 /* Release */,
+				F3C31C97F006428E865BCE16 /* MinSizeRel */,
+				A01F635716E0486F85797D70 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CF8846150DA544AD821799FF /* Build configuration list for PBXNativeTarget "10m-cli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77EA04EABB1348C9AD398522 /* Debug */,
+				871D5ED5F5754BDC95DD9C73 /* Release */,
+				AFAE60E0C0544C01BDCEB32A /* MinSizeRel */,
+				F8844E88D87247AA8CAD25E5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DDCDE54DE44F4A79978352B9 /* Build configuration list for PBXNativeTarget "kqueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				135CE98B331942CFBAB9FCC5 /* Debug */,
+				C4A74EE26B6C4CCF8EFA7D1A /* Release */,
+				5C1D5CFE07F84FC88F87DF5A /* MinSizeRel */,
+				8B1E04A1F21A4C1294F82F5A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DEF3F000424648A88508DB9F /* Build configuration list for PBXNativeTarget "hsha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3949CFA263414E2AB5024BF2 /* Debug */,
+				FB341422467E47F0AD350E8C /* Release */,
+				C11A1DB15A984513A6D030D8 /* MinSizeRel */,
+				CFA2FED271EC44CE891332DB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F55D691514E84D39BA577527 /* Build configuration list for PBXNativeTarget "10m-svr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				535E3F4904A74A55AFFE941C /* Debug */,
+				B2379691A85E48B2BE2840AD /* Release */,
+				C5740FCE29DC4282B01C2D11 /* MinSizeRel */,
+				EF7A88B610944DDC9D7DF33C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72C69D62EA6A41829A5BFF06 /* Project object */;
+}
